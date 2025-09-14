@@ -18,7 +18,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
-body {
+.body_inicio {
     margin: 0;
     height: 100vh;
     display: flex;
@@ -31,7 +31,7 @@ body {
 .container {
     text-align: center;
     width: 400px;
-    height: 300px;
+    height: 330px;
     background-color: rgb(69, 68, 68);
     border-radius: 13px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -62,13 +62,76 @@ body {
 
 /* Estilos para a página de serviços */
 
-.my_service_container {
+.titulo_serviços {
+    font-size: 32px;
+    font-weight: bold;
     text-align: center;
-    width: 400px;
-    height: 300px;
+    margin-top: 120px;
+    color: #333;
+}
+
+.paragrafo_serviços {
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.body_my_service {
+    
+    text-align: center;
+    background-color: #f0f0f0;
+    background-image: url('https://wallpapers.com/images/hd/minimalist-mountain-uc1it5a2r7pwgi79.jpg');
+}
+
+.my_service_superior {
+    height: 100vh;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.my_service_container {
+    width: 350px;
+    height: 230px;
     background-color: rgb(69, 68, 68);
     border-radius: 13px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     overflow: auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+.my_service_container_texto {
+    color: white;
+    font-size: 13px;
+}
+
+.my_service_container_texto_titulo {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my_service_container_texto_titulo_vermelho {
+    color: red;
+    font-size: 12PX;
+}
+
+
+.my_service_container_texto_titulo_vermelho_preco {
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 25px;       
+}
+    
+.saiba_mais_link {
+    background-color: rgb(211, 34, 84);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
 }
