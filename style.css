@@ -61,6 +61,83 @@
     font-family: "Open Sans", sans-serif;
 }
 
+/*Estilos para a pagina de formulario*/
+
+.nav_formulario {
+    width: 99%;
+    padding: 10px;
+    background-color: rgba(69, 68, 68, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: right;
+}
+.nav_link_formulario {
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+.body_formulario {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    background-image: url('https://wallpapers.com/images/hd/minimalist-mountain-uc1it5a2r7pwgi79.jpg');
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    width: 1000px;
+    height: 400px;
+    background-color: rgb(69, 68, 68);
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.formulario_botao {
+    background-color: rgb(211, 34, 84);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 20px;
+}
+
+.formulario_texto_titulo {
+    color: rgb(211, 34, 84);
+    font-size: 32px;
+    border-radius: 13px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.formulario_texto {
+    color: white;
+}
+
+.formulario_campos_titulo {
+    color: white;
+}
+
+.formulario_campos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 6px 180px;
+}
+
 /* Estilos para a página de serviços */
 
 .titulo_serviços {
