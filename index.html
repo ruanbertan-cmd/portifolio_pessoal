@@ -6,26 +6,76 @@
     <title>Portifólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body_inicio">
-    <header>
-        <nav class="nav">
-            <a class="nav_link" href="index.html">Home</a>
-            <a class="nav_link" href="my_service.html">Serviços</a>
-            <a class="nav_link" href="">portifólio</a>
-            <a class="nav_link" href="">Contato</a>
-    </header>
 
-    <main class="container">
-        <h1 class="container_texto">Ruan Bertan</h1>
-        <p class="container_texto"><strong class="container_texto_vermelho">Desenvolvedor Web</strong></p>
-        <p class="container_texto">Bem-vindo ao meu portifólio!</p>
-        <p class="container_texto">Aqui você encontrará meus projetos e trabalhos.</p>
-        <p class="container_texto"> Realizo desenvolvimento web, focado em front-end e outras áreas criativas.
-        Sinta-se à vontade para explorar e conhecer mais sobre mim.</p>
-        
-        <a class="container_botao" href="my_service.html">ME CONTRATE!</a>
+<body>
+    <nav class="nav">
+        <ul class="nav-coluna">
+            <li>
+                <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#portifolio">Portifólio</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#contato">Contato</a>
+            </li>
+        </ul>
+    </nav>
 
+    <main id="inicio" class="imagem-central">
+        <h1>Ruan Bertan</h1>
+        <p class="inicio-paragrafo">Desenvolvedor Front End</p>
+        <img src="imagem_portifolio.jpeg" alt="Imagem-portifolio" class="foto">
     </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre</h2>
+            <div class="sobre-caixa">
+                <p class="sobre_texto">Aqui você encontrará meus projetos e trabalhos.</p>
+                <p class="sobre_texto"> Realizo desenvolvimento web, focado em front-end e outras áreas criativas.
+                Sinta-se à vontade para explorar e conhecer mais sobre mim.</p>
+            </div>
+    </section>
+
+    <section id="portifolio" class="portifolio">
+            <h2 class="portifolio-titulo">Portifólio</h2>
+        <div class="portifolio-conteiner">
+
+            <div class="portifolio-conteiner-solo">
+                <a href="https://s.tmimgcdn.com/scr/1200x750/100500/malvin-modelo-de-pagina-de-destino-html-de-portfolio-pessoal_100526-original.jpg" class="imagem-portifolio"></a>
+                <h3 class="portifolio-info">Portifólio1</h3>
+                <p class="portifolio-paragrafo">Comentario resarvado par ao primeiro porjeto, detalhar e mostrar porjeto do cliente 1</p>
+            </div>
+
+            <div class="portifolio-conteiner-solo">
+                <a href="https://s.tmimgcdn.com/scr/1200x750/100500/malvin-modelo-de-pagina-de-destino-html-de-portfolio-pessoal_100526-original.jpg" class="imagem-portifolio"></a>
+                <h3 class="portifolio-info">Portifólio2</h3>
+                <p class="port-paragrafo">Comentario resarvado par ao primeiro porjeto, detalhar e mostrar porjeto do cliente 2</p>
+            </div>
+
+            <div class="portifolio-conteiner-solo">
+                <a href="https://s.tmimgcdn.com/scr/1200x750/100500/malvin-modelo-de-pagina-de-destino-html-de-portfolio-pessoal_100526-original.jpg" class="imagem-portifolio"></a>
+                <h3 class="portifolio-info">Portifólio3</h3>
+                <p class="port-paragrafo">Comentario resarvado par ao primeiro porjeto, detalhar e mostrar porjeto do cliente 3</p>
+            </div>
+
+        </div>
+    </section>
+
+    </section id="Contatos" class="contatos">
+        <h2>Contatos</h2>
+        <form class="formulario-contato">
+            <div>
+                <input placeholder="Nome">
+            </div>
+            <div>
+                <textarea placeholder="Digite sua mensagem!"></textarea>
+            </div>
+        </form>
+
     <footer></footer>
 </body>
 </html>

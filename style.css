@@ -1,217 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: #010d23;
+    font-family: 'Times New Roman', Times, serif;
+}
 .nav {
-    
-    width: 99%;
-    padding: 10px;
-    background-color: rgba(69, 68, 68, 0.8);
     position: fixed;
     top: 0;
-    left: 0;
-    display: flex;
-    justify-content: right;
+    background-color: #00000065;
+    width: 100%;
+    z-index: 100;
+    padding: 1.2rem;
 }
-.nav_link {
-    margin-left: 50px;
-    text-decoration: none;
-    color: white;
-    font-family: "Open Sans", sans-serif;
-}
-
-.body_inicio {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    background-image: url('https://wallpapers.com/images/hd/minimalist-mountain-uc1it5a2r7pwgi79.jpg');
-}
-
-.container {
+.nav-coluna {
     text-align: center;
-    width: 400px;
-    height: 330px;
-    background-color: rgb(69, 68, 68);
-    border-radius: 13px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin-bottom: 200px;
-}
-
-.container_texto {
-    color: white;
-    font-family: "Open Sans", sans-serif;
-
-}
-
-.container_texto_vermelho {
-    color: rgb(211, 34, 84);
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.container_botao {
-    background-color: rgb(211, 34, 84);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
-}
-
-/*Estilos para a pagina de formulario*/
-
-.nav_formulario {
-    width: 99%;
-    padding: 10px;
-    background-color: rgba(69, 68, 68, 0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
     display: flex;
-    justify-content: right;
-}
-.nav_link_formulario {
-    margin-left: 50px;
-    text-decoration: none;
-    color: white;
-    font-family: "Open Sans", sans-serif;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
 }
 
-.body_formulario {
-    margin: 0;
-    height: 100vh;
+.nav-link {
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    color: white;
+    padding: 0.5rem 0;
+}
+
+.nav-link::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #2e00fa;
+    transition: width 0.5s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.imagem-central {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
-    background-image: url('https://wallpapers.com/images/hd/minimalist-mountain-uc1it5a2r7pwgi79.jpg');
-}
-
-.formulario {
-    display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
-    gap: 5px;
-    width: 1000px;
-    height: 400px;
-    background-color: rgb(69, 68, 68);
-    border-radius: 13px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin-bottom: 200px;
 }
 
-.formulario_botao {
-    background-color: rgb(211, 34, 84);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-family: "Open Sans", sans-serif;
-    margin-top: 20px;
+.foto {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid #010d23;
+    margin: 30px 20px;
 }
 
-.formulario_texto_titulo {
-    color: rgb(211, 34, 84);
-    font-size: 32px;
-    border-radius: 13px;
-    box-shadow: 0 2px rgba(0, 0, 0, 0.3);
-}
-
-.formulario_texto {
-    color: white;
-}
-
-.formulario_campos_titulo {
-    color: white;
-}
-
-.formulario_campos {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 6px 180px;
-}
-
-/* Estilos para a página de serviços */
-
-.titulo_serviços {
-    font-size: 32px;
+h1 {
+    font-size: 3.5rem;
     font-weight: bold;
-    text-align: center;
-    margin-top: 120px;
-    color: #333;
-    font-family: "Open Sans", sans-serif;
+    margin: 30px 20px;
 }
 
-.paragrafo_serviços {
-    margin-top: 50px;
-    font-size: 20px;
-    text-align: center;
-    color: #333;
-    font-family: "Open Sans", sans-serif;
+.inicio-paragrafo {
+    font-size: 1.2rem;
+    margin: 10px 20px;
 }
 
-.body_my_service {
-    overflow-y: hidden;
-    text-align: center;
-    background-color: #f0f0f0;
-    background-image: url('https://wallpapers.com/images/hd/minimalist-mountain-uc1it5a2r7pwgi79.jpg');
-}
-
-.my_service_superior {
-    height: 100vh;
-    margin-top: 80px;
+.sobre {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    gap: 90px;
+    flex-direction: column;
+    text-align: center;
 }
 
-.my_service_container {
-    width: 350px;
-    height: 230px;
-    background-color: rgb(69, 68, 68);
-    border-radius: 13px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding-left: 10px;
-    padding-right: 10px;
-    overflow: auto;
-    font-family: "Open Sans", sans-serif;
+.sobre-titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 20px 10px;
 }
 
-.my_service_container_texto {
-    color: white;
-    font-size: 13px;
+.sobre-caixa {
+    padding: 2rem;
+    max-height: 600px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: rgb(123, 93, 255);
+    width: 40rem;
 }
 
-.my_service_container_texto_titulo {
-    color: white;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.sobre-texto {
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-.my_service_container_texto_titulo_vermelho {
-    color: rgb(211, 34, 84);
-    font-size: 12PX;
+.portifolio {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.portifolio-titulo {
+}
+
+.portifolio-conteiner{
+    align-items: stretch    
 }
 
 
-.my_service_container_texto_titulo_vermelho_preco {
-    padding-left: 20px;
-    padding-right: 10px;
-    font-size: 25px;       
+.portifolio-conteiner-solo{
+
 }
-    
-.saiba_mais_link {
-    background-color: rgb(211, 34, 84);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-    text-decoration: none;
-}
+
+.portifolio-info{}
+
+.portifolio-paragrafo{}
