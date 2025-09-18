@@ -62,8 +62,8 @@ body {
 }
 
 .foto {
-    width: 300px;
-    height: 300px;
+    width: 490px;
+    height: 490px;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border-radius: 50%;
     border: 4px solid #010d23;
@@ -111,6 +111,7 @@ h1 {
 }
 
 .portifolio {
+    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -119,17 +120,53 @@ h1 {
 }
 
 .portifolio-titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0 10px;
+    margin-bottom: 2rem;
 }
 
 .portifolio-conteiner{
-    align-items: stretch    
+    display: flex;
+    gap: 10px;
+    margin: 0;
 }
 
 
 .portifolio-conteiner-solo{
-
+    padding: 10px 10px;
 }
 
-.portifolio-info{}
+.portifolio-info{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-shadow: 2px 2px black;
+    margin-top: 1.9rem;
+}
 
-.portifolio-paragrafo{}
+.portifolio-paragrafo {
+    text-align: center;
+    border: white ;
+    font-size: 1.07rem;
+    padding: 0 0 30px 0;
+    width: 75%;
+    margin: auto;
+}
+
+
+.imagem-portifolio {
+    box-shadow: 10px 20px 20px 0 rgba(79, 70, 229, 0.3);
+    border-radius: 5%;
+    border: 1px solid #010d23;
+    margin-top: 1.7rem;
+    width: 90%;
+    height: 65%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.imagem-portifolio:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
